@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1BEE7"  tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#8E24AA"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Counter Up"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCounter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textViewCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp" android:layout_marginBottom="48dp" android:text="0"
+        android:textSize="96sp" android:textColor="#4A148C" android:textStyle="bold" app:layout_constraintBottom_toTopOf="@+id/buttonDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUp" />
+
+    <Button
+        android:id="@+id/buttonDown"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Counter Down"
+        android:textSize="20sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:backgroundTint="#AB47BC" android:textColor="#FFFFFF" app:cornerRadius="16dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCounter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
