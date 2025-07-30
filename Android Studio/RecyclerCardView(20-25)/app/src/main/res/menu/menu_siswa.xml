@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_detail" android:title="Lihat Detail" />
+    <item android:id="@+id/menu_edit" android:title="Edit Data" />
+    <item android:id="@+id/menu_delete" android:title="Hapus Data" />
+    <item android:id="@+id/menu_share" android:title="Bagikan" />
+    <item android:id="@+id/menu_favorite" android:title="Simpan ke Favorit" />
+</menu>
